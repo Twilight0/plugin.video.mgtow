@@ -87,8 +87,8 @@ msgid "Various (updated regularly)"
 msgstr "Διάφορα (συχνή ενημέρωση)"
 
 msgctxt "#30019"
-msgid ""
-msgstr ""
+msgid "Howard Dare's playlists"
+msgstr "Οι λίστες αναπαραγωγής του Howard Dare"
 
 msgctxt "#30020"
 msgid ""

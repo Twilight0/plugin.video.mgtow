@@ -28,6 +28,7 @@ en_id1 = 'UCudGalFyS2ogM1vNMVK_nQw'
 en_id2 = 'UCuroE3DKmb7V_v-ZY-QCGtg'
 ffa_id = 'UC6Iaz96RkYE-MOjnq5NPgqw'
 sm_id = 'UCeCV-XNeZIoHiCGfNYCLh9Q'
+hdare_id = 'UCs-brcHDxKqrOGU9cEWuCMQ'
 pl_id = 'PLZF-_NNdxpb5b8lmx6x__-wkAyQ6dB_yB'
 
 key = b64decode('QUl6YVN5QThrMU95TEdmMDNIQk5sMGJ5RDUxMWpyOWNGV28yR1I0')  # please do not copy this key
@@ -144,8 +145,16 @@ def main():
         {
             'title': 30016,
             'action': 'playlists',
-            'icon': control.addonInfo('icon'),
+            'icon': 'sandman.png',
             'url': sm_id
+        }
+        ,
+        {
+            'title': 30019,
+            'action': 'playlists',
+            'icon': 'hdare.png',
+            'fanart': control.join(control.addonPath, 'resources', 'media', 'hdare_fanart.jpg'),
+            'url': hdare_id
         }
         ,
         {

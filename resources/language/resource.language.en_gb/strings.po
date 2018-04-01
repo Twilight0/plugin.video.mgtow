@@ -87,7 +87,7 @@ msgid "Various (updated regularly)"
 msgstr ""
 
 msgctxt "#30019"
-msgid ""
+msgid "Howard Dare's playlists"
 msgstr ""
 
 msgctxt "#30020"
