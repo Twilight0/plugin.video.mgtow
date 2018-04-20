@@ -30,6 +30,7 @@ ffa_id = 'UC6Iaz96RkYE-MOjnq5NPgqw'
 sm_id = 'UCeCV-XNeZIoHiCGfNYCLh9Q'
 hdare_id = 'UCs-brcHDxKqrOGU9cEWuCMQ'
 pl_id = 'PLZF-_NNdxpb5b8lmx6x__-wkAyQ6dB_yB'
+lol_id = 'UCoNGo02Aai6VQotn-MNnbpw'
 
 key = b64decode('QUl6YVN5QThrMU95TEdmMDNIQk5sMGJ5RDUxMWpyOWNGV28yR1I0')  # please do not copy this key
 
@@ -162,6 +163,14 @@ def main():
             'action': 'videos',
             'icon': 'youtube.png',
             'url': ffa_id
+        }
+        ,
+        {
+            'title': 30020,
+            'action': 'videos',
+            'icon': 'clown.png',
+            'fanart': control.join(control.addonPath, 'resources', 'media', 'lol_fanart.jpg'),
+            'url': lol_id
         }
         ,
         {
