@@ -23,12 +23,15 @@ from base64 import b64decode
 from resources.lib import url, action
 from tulip import directory, youtube, cache, control, bookmarks
 
-gr_id = 'UClJB2HvfbnRHaLV-Y59R7mQ'
+gr_id1 = 'UCB5YHK0jJ0klDKUQkkAQsUw' # mirror
+gr_id2 = 'UCWRZG6attvkrRe2SQR7EG2w' # dikaspolos
+gr_id3 = 'UCde1ob4SuumL6x5RaF_-ajA' # eleutheros antras
 en_id1 = 'UCudGalFyS2ogM1vNMVK_nQw'
 en_id2 = 'UCuroE3DKmb7V_v-ZY-QCGtg'
 ffa_id = 'UC6Iaz96RkYE-MOjnq5NPgqw'
 sm_id = 'UCeCV-XNeZIoHiCGfNYCLh9Q'
-hdare_id = 'UCs-brcHDxKqrOGU9cEWuCMQ'
+hd_id = 'UCs-brcHDxKqrOGU9cEWuCMQ'
+bar_id = 'UCDoNFQZqQpd6aL32Ua4JPTQ'
 pl_id = 'PLZF-_NNdxpb5b8lmx6x__-wkAyQ6dB_yB'
 lol_id = 'UCoNGo02Aai6VQotn-MNnbpw'
 
@@ -89,11 +92,11 @@ def videos(link):
     if link == 'mgtow':
 
         if control.setting('language') == '0' and control.infoLabel('System.Language') == 'Greek':
-            video_list = cache.get(item_list, 12, gr_id)
+            video_list = cache.get(item_list, 12, gr_id2) + cache.get(item_list, 12, gr_id3) + cache.get(item_list, 12, gr_id1)
         elif control.setting('language') == '0' and control.infoLabel('System.Language') != 'Greek' or control.setting('language') == '1':
             video_list = cache.get(item_list, 12, en_id1) + cache.get(item_list, 12, en_id2)
         else:
-            video_list = cache.get(item_list, 12, gr_id)
+            video_list = cache.get(item_list, 12, gr_id2) + cache.get(item_list, 12, gr_id3) + cache.get(item_list, 12, gr_id1)
 
     else:
 
@@ -155,7 +158,7 @@ def main():
             'action': 'playlists',
             'icon': 'hdare.png',
             'fanart': control.join(control.addonPath, 'resources', 'media', 'hdare_fanart.jpg'),
-            'url': hdare_id
+            'url': hd_id
         }
         ,
         {
