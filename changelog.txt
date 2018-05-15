@@ -1,3 +1,6 @@
+15-05-2018 - [B]1.0.4~beta[/B]
+- Replaced gr1 channel_id with a playlist_id
+
 10-05-2018 - [B]1.0.3~beta[/B]
 - Changed main greek channel id (using mirrored one)
 - Added alternative channel id for greek content

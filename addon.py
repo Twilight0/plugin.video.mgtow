@@ -23,7 +23,7 @@ from base64 import b64decode
 from resources.lib import url, action
 from tulip import directory, youtube, cache, control, bookmarks
 
-gr_id1 = 'UCB5YHK0jJ0klDKUQkkAQsUw' # mirror
+gr_id1 = 'PLvGys56G57LQU5iG2ZuYEdmEHZwJKmdcN' # mirror
 gr_id2 = 'UCWRZG6attvkrRe2SQR7EG2w' # dikaspolos
 gr_id3 = 'UCde1ob4SuumL6x5RaF_-ajA' # eleutheros antras
 en_id1 = 'UCudGalFyS2ogM1vNMVK_nQw'
@@ -92,11 +92,11 @@ def videos(link):
     if link == 'mgtow':
 
         if control.setting('language') == '0' and control.infoLabel('System.Language') == 'Greek':
-            video_list = cache.get(item_list, 12, gr_id2) + cache.get(item_list, 12, gr_id3) + cache.get(item_list, 12, gr_id1)
+            video_list = cache.get(item_list, 12, gr_id2) + cache.get(item_list, 12, gr_id3) + cache.get(youtube.youtube(key=key).playlist, 12, gr_id1)
         elif control.setting('language') == '0' and control.infoLabel('System.Language') != 'Greek' or control.setting('language') == '1':
             video_list = cache.get(item_list, 12, en_id1) + cache.get(item_list, 12, en_id2)
         else:
-            video_list = cache.get(item_list, 12, gr_id2) + cache.get(item_list, 12, gr_id3) + cache.get(item_list, 12, gr_id1)
+            video_list = cache.get(item_list, 12, gr_id2) + cache.get(item_list, 12, gr_id3) + cache.get(youtube.youtube(key=key).playlist, 12, gr_id1)
 
     else:
 
